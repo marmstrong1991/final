@@ -1,0 +1,91 @@
+
+ h4{ 
+   color: darkred
+
+ }
+ @keyframes first {
+  from {color: rgb(182, 24, 50);}
+  to {color: blueviolet;}
+  from {opacity:0 ;}
+  to {opacity:100% ;}
+  
+}
+h1{
+  color:crimson;
+  font-style: inherit;
+  animation-name: first;
+  animation-duration: 14s;
+}
+h2{
+  color:crimson; 
+}
+h3{
+  color:crimson
+}
+ @keyframes second {
+  from {color:red;}
+  to {color: yellow;}
+  from {opacity:0 ;}
+  to {opacity:100% ;}
+}
+p1{
+  color: crimson ;
+  font-weight: bolder;
+  font-size: larger;
+  font-display: bold;
+  font-optical-sizing: 300px;
+
+  width: 300px;
+  height: 300px;
+ animation-name: second;
+  animation-duration: 9s;
+  }
+  @keyframes third {
+  from {background-position:0%;}
+  to {background-position: 100%;}
+}
+
+body {
+ background-image: url("https://i.ytimg.com/vi/d2mxoo_f9_A/maxresdefault.jpg");
+ background-color: #cccccc;
+ display: inline;
+ flex-direction: unset;
+ animation-name: third;
+ animation-duration: 12s;
+}
+.splash{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: 200;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
+}
+.splash.display-none{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: -10;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
+  transition: 1.0s;
+}
+
+@keyframes fadeIn{
+  to{
+    opacity: 1;
+  }
+  fade-in{
+    opacity: 0;
+    animation: fadeIn is ease-in forwards;
+  }
+}
